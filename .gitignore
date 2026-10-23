@@ -39,3 +39,29 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# all env files (keep secrets out of git)
+.env
+.env.*
+!.env.example
+
+# Android / EAS build outputs
+*.apk
+*.aab
+*.ipa
+build/
+
+# editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# test coverage
+coverage/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Windows
+Thumbs.db
